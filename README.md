@@ -2,21 +2,23 @@
 
 Este proyecto implementa un sistema básico de inicio de sesión en PHP siguiendo el patrón MVC (Modelo – Vista – Controlador).
 
-El usuario introduce sus credenciales en un formulario y se valida contra la base de datos.
+-El usuario introduce sus credenciales en un formulario y se valida contra la base de datos.
 
-Si el login es correcto, se redirige al listado interno.
+-Si el login es correcto, se redirige al listado interno.
 
-<b>Funcionalidades</b>
+-Gu
 
-Inicio de sesión con usuario y contraseña
+<h3>Funcionalidades</h3>
 
-Control de acceso mediante sesión
+-Inicio de sesión con usuario y contraseña
 
-Redirección al interior si el usuario está autenticado
+-Control de acceso mediante sesión
 
-Logout para cerrar sesión
+-Redirección al interior si el usuario está autenticado
 
-Estructura del proyecto
+-Logout para cerrar sesión
+
+<h3 text-alingn="center">Estructura del proyecto</h3>
 
 config/Database.php → conexión con MySQL usando PDO
 
@@ -28,43 +30,36 @@ views/login.php → vista del formulario de login
 
 index.php → enrutador principal
 
-Vista (Login)
+<h3>Vista (Login)</h3>
 
-Archivo principal: views/login.php
+-Archivo principal: views/login.php
 
-Contiene el formulario HTML con estilos y validación.
+-Contiene el formulario HTML con estilos y validación.
 
-<form action="index.php?action=authenticate" method="POST">
-    <input type="text" name="idusuario" required>
-    <input type="password" name="password" required>
-    <button type="submit">Ingresar</button>
-</form>
+<img width="512" height="827" alt="image" src="https://github.com/user-attachments/assets/8dfe719c-0285-4f8a-aa55-2d4d04e3c715" />
 
 
-Controlador
+<h3>Controlador</h3>
 
-Archivo: controllers/AuthController.php
+-Archivo: controllers/AuthController.php
 
-Se encarga de mostrar la vista y autenticar.
+-Se encarga de mostrar la vista y autenticar.
 
-if ($this->userModel->login($username, $password)) {
-    $_SESSION['idusuario'] = $username;
-    header("Location: index.php?action=index");
-}
+-Los usuarios y contraseñas añadidos deben seguir un patrón de validación, en este caso, al crearlo el usuario debe tener entre 3 y 20 caracteres alfanuméricos y la contraseña a partir de 9, teniendo que contar con letras en mayúsculas, minúsculas, números y caracteres especiales.
 
+<img width="1176" height="851" alt="image" src="https://github.com/user-attachments/assets/250e1651-8c3c-40ca-bf97-5e72012a6379" />
 
-Modelo
+<h3>Modelo</h3>
 
 Archivo: models/User.php
 
 Realiza la consulta a la base de datos.
 
-$query = "SELECT * FROM usuario WHERE idusuario = ? AND password = ?";
+<img width="941" height="882" alt="image" src="https://github.com/user-attachments/assets/5e090105-60c1-42d9-96af-173c85e5ff4f" />
 
+<h3>Ejecución</h3>
 
-Ejecución
-
-Colocar el proyecto en htdocs (XAMPP)
+En XAMPP comenzar Apache y SQL.
 
 Abrir en el navegador:
 
