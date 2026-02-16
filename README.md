@@ -18,7 +18,7 @@ Este proyecto implementa un sistema básico de inicio de sesión en PHP siguiend
 
 -Logout para cerrar sesión
 
-<h3 text-alingn="center">Estructura del proyecto</h3>
+<h3 alingn="center">Estructura del proyecto</h3>
 
 config/Database.php → conexión con MySQL usando PDO
 
