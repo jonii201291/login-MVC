@@ -18,7 +18,7 @@ Este proyecto implementa un sistema básico de inicio de sesión en PHP siguiend
 
 -Logout para cerrar sesión
 
-<h3 alingn="center">Estructura del proyecto</h3>
+<h3 align="center">Estructura del proyecto</h3>
 
 config/Database.php → conexión con MySQL usando PDO
 
@@ -29,6 +29,13 @@ models/User.php → modelo Usuario (consulta en BD)
 views/login.php → vista del formulario de login
 
 index.php → enrutador principal
+
+<h3>Configuración</h3>
+
+-
+
+<img width="1463" height="650" alt="image" src="https://github.com/user-attachments/assets/69e2d6fb-14de-4afc-a5f5-57c200c4199d" />
+
 
 <h3>Vista (Login)</h3>
 
