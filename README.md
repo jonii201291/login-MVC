@@ -4,19 +4,13 @@ Este proyecto implementa un sistema básico de inicio de sesión en PHP siguiend
 
 -El usuario introduce sus credenciales en un formulario y se valida contra la base de datos.
 
--Si el login es correcto, se redirige al listado interno.
+-Si el login es correcto, en este caso no hace nada, sino salta mensaje de error.
 
--Gu
+-Crear en C:/xampp/htdocs
 
 <h3>Funcionalidades</h3>
 
 -Inicio de sesión con usuario y contraseña
-
--Control de acceso mediante sesión
-
--Redirección al interior si el usuario está autenticado
-
--Logout para cerrar sesión
 
 <h3 align="center">Estructura del proyecto</h3>
 
@@ -32,7 +26,7 @@ index.php → enrutador principal
 
 <h3>Configuración</h3>
 
--
+-Conexión con la base de datos.
 
 <img width="1463" height="650" alt="image" src="https://github.com/user-attachments/assets/69e2d6fb-14de-4afc-a5f5-57c200c4199d" />
 
