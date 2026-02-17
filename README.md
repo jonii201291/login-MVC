@@ -20,7 +20,7 @@ controllers/AuthController.php → controlador de autenticación
 
 models/User.php → modelo Usuario (consulta en BD)
 
-views/login.php → vista del formulario de login
+views/Login.php → vista del formulario de login
 
 index.php → enrutador principal
 
@@ -33,7 +33,7 @@ index.php → enrutador principal
 
 <h3>Vista (Login)</h3>
 
--Archivo principal: views/login.php
+-Archivo principal: views/Login.php
 
 -Contiene el formulario HTML con estilos y validación.
 
@@ -62,6 +62,4 @@ Realiza la consulta a la base de datos.
 
 En XAMPP comenzar Apache y SQL.
 
-Abrir en el navegador:
-
-http://localhost/login-mvc/
+Abrir en el navegador: localhost/rutaDelProyecto
